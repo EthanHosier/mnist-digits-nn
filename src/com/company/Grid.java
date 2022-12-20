@@ -33,7 +33,7 @@ public class Grid extends JPanel {
             for (int j = 0; j < gridArray[i].length; j ++) {
                 gridArray[i][j] = 0;
                 squares[i][j] = new JLabel(){
-                    { this.setText("0");
+                    { //this.setText("0");
                     this.setFont(new Font("Serif Sans",Font.BOLD,14));
                     this.setForeground(new Color(0x05F609));
                     this.setSize(panelSideLengthInPixels/rows - 2, panelSideLengthInPixels/rows - 2 );
@@ -143,7 +143,7 @@ public class Grid extends JPanel {
         try {
             gridArray[y][x] = gsVal;
             squares[y][x].setBackground(new Color(255 - gsVal,255 - gsVal,255 - gsVal));
-            squares[y][x].setText(Integer.toString(gsVal));
+            //squares[y][x].setText(Integer.toString(gsVal));
             this.repaint();
 
 
